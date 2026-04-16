@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Create directory
+mkdir my_folder
+
+# Create file with some text
+echo "This is my first file." > my_file.txt
+
+# Create another file with some text
+echo "This is another file." > another_file.txt
+
+#Append the content of another_file.txt to my_file.txt
+cat another_file.txt >> my_file.txt
+
+#Display updated content
+cat my_file.txt
