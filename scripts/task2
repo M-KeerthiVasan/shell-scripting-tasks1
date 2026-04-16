@@ -1,0 +1,17 @@
+#Create 20 Files
+
+for i in {1..20}
+do
+   echo "This is file $i" > file$i.txt
+done
+
+#Rename First 5 Files to .yml
+
+for i in {1..5}
+do
+   mv file$i.txt file$i.yml
+done
+
+#Print Latest Created Top 5 Files
+
+ls -lt | head -5
